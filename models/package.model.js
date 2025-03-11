@@ -17,6 +17,14 @@ const packageSchema = new mongoose.Schema({
     required: true,
     trim: true,
   },
+  inclusions: {
+    type: String,
+    required: true,
+  },
+  exclusions: {
+    type: String,
+    required: true,
+  },
   offersAndPackages: {
     type: mongoose.Schema.Types.ObjectId,
     ref: "Offer",

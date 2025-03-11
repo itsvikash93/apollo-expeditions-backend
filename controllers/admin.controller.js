@@ -245,7 +245,7 @@ module.exports.addExperience = async (req, res) => {
       imageKey: imageKey,
     });
 
-    console.log(imageUrls);
+    // console.log(imageUrls);
 
     res.status(200).send({ imageUrl: imageUrls.uploadUrl });
   } catch (err) {

@@ -19,6 +19,14 @@ const upcomingTripSchema = new mongoose.Schema({
     required: true,
     trim: true,
   },
+  inclusions: {
+    type: String,
+    required: true,
+  },
+  exclusions: {
+    type: String,
+    required: true,
+  },
   price: {
     type: String,
     required: true,

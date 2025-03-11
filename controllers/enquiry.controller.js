@@ -75,6 +75,7 @@ module.exports.addPackageEnquiry = async (req, res) => {
         `New Package Enquiry from ${packageEnquiry.name}`,
         emailHtml
       );
+      console.log(response);
       if (response.error) {
         res.status(500).json({
           message: response.error,

@@ -9,6 +9,7 @@ const popularPlaceSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
+
   imageKey: {
     type: String,
     required: true,
